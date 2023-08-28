@@ -18,6 +18,29 @@ public class HashSetExam {
 		System.out.println(set);
 		System.out.println("학생 수:"+set.size());
 		
+		for(String string : set) {
+			System.out.println(string);
+		}
+		
+		System.out.println("+++++++++++++++++++++++");
+		
+		//
+		System.out.println("유재석");
+		System.out.println("유재석있습니다");
+		
+		System.out.println("+++++++++++++++++++++++");
+		
+		System.out.println("삭제전:" + set.size());
+		set.remove("유재석");
+		System.out.println("삭제후:" + set.size());
+		
+		System.out.println("+++++++++++++++++++++++");
+		
+		set.clear();
+		if(set.isEmpty())
+			System.out.println("전체삭제후학생수" + set.size());
+		
+		System.out.println("+++++++++++++++++++++++");	
 	}
 
 }
